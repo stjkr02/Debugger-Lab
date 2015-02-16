@@ -18,4 +18,15 @@ In the `playGame` method, the body of the while-loop  checks the score of the tu
 ####Question 4:
 I believe, with my current understanding of the code, that the problem is most likely going to be in the **PigGame.java** portion of this program, especially the `playTurn` method, as it is where "everything is happening" in the sense that the most complicated part of the pig game (rolling dice multiples times for a turn score) is coded. Another possibility is the **Die.Java**, as the `Die` class looks a little strange in the implementation.  As for the rest of the files, **Main.java** looks pretty straightforward as it is only calling the other classes and **ScoreSheet.java** only records, stores and returns values.
 
- 
+
+####Question 5:
+The problem with the program was that the `Die` class did not generate the proper random numbers, rather it just spewed a buch of 0's out. To fix the problem, I made sure that the typcasting of the `roll` method was set to Integer, and then the program worked correctly. 
+
+####Question 6:
+
+|Cutoff Value| Average Number of Turns|  
+|--|--|  
+| 10 | 6.0588235294117645 |
+| 15 | 6.0 |
+| 20 | 11.222222222222221 |
+| 25 | 11.444444444444445 | 

@@ -8,15 +8,22 @@ public class Main
 {
   public static void main(String[] args)
   {
-    // Create a new game with a cutoff of 18
-    PigGame g = new PigGame(18);
+    int[] values = {10, 15, 20, 25};
     
-    // Run one game
-    g.playGame();
-    
-    // output the results
-    System.out.println(g.getScore());
-    System.out.println(g.getNumTurns());
-    System.out.println(g.getTurnAverage());
+    for (int i = 0; i < values.length; i++){
+      // Create a new game 
+      PigGame g = new PigGame(values[i]);
+      
+      // Run one game
+      g.playGame();
+      
+      // Output the results
+      //System.out.println(g.getScore());
+      //System.out.println(g.getNumTurns());
+      //System.out.println(g.getTurnAverage());
+      
+      //My Output
+      System.out.println("| " + values[i] + " | " + g.getTurnAverage()+ " |");
+    }
   }
 }
